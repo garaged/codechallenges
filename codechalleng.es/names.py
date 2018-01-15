@@ -6,7 +6,7 @@ NAMES = ['arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
 
 def dedup_and_title_case_names(names):
     """Should return the modified names sequence"""
-    return sorted([i.title() for i in set(names)])
+    return [i.title() for i in set(names)]
 
 def sort_by_surname_desc(names):
     names = dedup_and_title_case_names(names)
